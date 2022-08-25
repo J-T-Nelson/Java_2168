@@ -8,6 +8,10 @@ public interface ATM {
 
     boolean withdraw(String account, double amount);
 
+    default void deposit(String account, double amount) {
+        System.out.println("balance increased by " + amount + " in account"+account);
+    }
+
 
 }
 //

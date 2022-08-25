@@ -5,7 +5,7 @@ public class ATMBankOfAmerica {
     //no daily withdraw limit
     @Override
     public void showBalance(String account){
-      system.out.println("The balance of your account: " + account + " is " + getBalance(account));
+      System.out.println("The balance of your account: " + account + " is " + getBalance(account));
     }
 
     
