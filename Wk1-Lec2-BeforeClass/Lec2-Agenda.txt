@@ -1,0 +1,60 @@
+
+1. ComparableATMChase interface hierarchy
+
+   Some points.
+
+
+2. Generic Class & Generic Method
+
+   Generic class: GenericContainerClass<T>
+         some points.
+
+   Use ArrayList<E> in Java API
+       Class ArrayListGenericTest
+   
+   Generic Methods not in a Generic Class:
+       Class: GenericMethodTest
+
+   Generic Method Practice:
+       Write a generic void method: 
+           name: checkEqual
+           parameters: two parameters of any type
+           functionality:
+               print "equal" if two parameters have identical data contents.
+                     "not equal" otherwise.
+
+   Benefits of Generics:
+       Classes: 
+         ArrayListGenericTest
+         GenericClassTest
+         ObjectContainerClass
+       
+
+3. Generic Interface
+
+   Interface: ComparableGenerics<T> hierarchy
+ 
+      Computer class implement it
+      ATMChase class implement it
+
+   Generic interface Comparable<T> in Java API.
+      * how to implement it
+      * compile time safety: 
+          class ComparableGenericJavaAPITest
+      
+4. Generic Interface Practice:
+   
+   Make Animal class implement Comparable<T> interface in Java API.
+        compare animals based on alphabetical order of names.
+             0, -1, 1
+	return 0 if  names same
+	       -1 if  this animal's name < other animal's name
+	       1  if  this animal's name > other animal's name
+	       
+   AnimalComparison class:
+       compare two animals.
+       //create an animal named "Joy".
+       //create a dog named happy.
+       //compare them using the implementation of Comparable<T> interface in Java API.
+ 
+   
