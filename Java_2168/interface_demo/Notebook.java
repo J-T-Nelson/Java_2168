@@ -11,5 +11,9 @@ public class Notebook extends Computer {
         this.screenSize = screenSize;
         this.weight = weight;
     }
+
+    public void print(){
+        System.out.println(screenSize + weight);
+    }
 }
 

@@ -3,7 +3,7 @@
 
 package generic_interface_demo;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 public class ComparableGenericJavaAPITest {
 
@@ -14,6 +14,7 @@ public class ComparableGenericJavaAPITest {
         String sweet1 = "cake";
         String sweet2 = "orange";
         
+        System.out.println(sweet1+sweet2+myComputer+myLaptop);
         
 
     }

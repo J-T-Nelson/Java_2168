@@ -3,6 +3,6 @@
 
 package generic_interface_demo;
 
-public interface ComparableGeneric {
-    
+public interface ComparableGeneric<T> {
+    int compareTo(T other);
 }

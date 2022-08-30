@@ -13,6 +13,13 @@ public class ATMChase implements ComparableATMChase {
         }
     }
 
+    // public String get(){
+
+    // }
+    public String getLocation() {
+        return location;
+    }
+
     private String id;
     private String location;
 

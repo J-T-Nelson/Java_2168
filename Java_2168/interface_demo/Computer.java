@@ -4,7 +4,7 @@ public class Computer implements ComparableComp, Printable {
 
     @Override
     public void print() {
-      System.out.println("bran: " + brand + ", cpu speed: " + cpuSpeed + "ram size: " + ramSize)
+      System.out.println("bran: " + brand + ", cpu speed: " + cpuSpeed + "ram size: " + ramSize);
     }
 
       // POSSIBLE RETURNS:
@@ -13,7 +13,7 @@ public class Computer implements ComparableComp, Printable {
     //-1: less powerful
     public int compareTo(Computer otherComp){
       double thisPower = computerPower();
-      double otherPower = otherComp.computePower();
+      double otherPower = otherComp.computerPower();
       if(thisPower > otherPower) {
         return 1;
       }
@@ -33,7 +33,7 @@ public class Computer implements ComparableComp, Printable {
         this.ramSize = ramSize;
     }
 
-    public double computePower() {
+    public double computerPower() {
         return cpuSpeed * ramSize;
     }
 }
