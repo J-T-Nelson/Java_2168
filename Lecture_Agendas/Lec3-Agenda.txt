@@ -1,0 +1,31 @@
+
+Lec#3
+
+1. Review List data structure
+
+2. Using List<E>, ArrayList<E>, LinkedList<E> in Java API
+   
+   basic usage: methods
+	ArrayListTest, ArrayListTest3
+
+   applications: 
+        DirectoryEntry: equals() method
+        DirectoryDemo
+
+3. Implement Array-Based List
+
+   KWArrayList<E> coding
+    class header
+    data fields
+    constructor
+    add(E item)
+    add(int index, E newItem)
+    remove(int index)
+
+4. Using List<E>, ArrayList<E>, LinkedList<E> in Java API  practice.
+
+   AnimalTest class
+     see comments inside
+
+   Animal class
+      add equals(Object) implementation

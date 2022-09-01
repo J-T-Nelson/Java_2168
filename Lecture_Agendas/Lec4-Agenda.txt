@@ -1,0 +1,36 @@
+
+Lec#4
+
+1. Lec 3 Practice Solution
+   arraylist_demo:
+      list of animals (linked list/arraylist)
+      Animal class: equals(Object) method
+      AnimalTest class       
+   
+
+2. Applications of List<E>, ArrayList<E>, LinkedList<E>
+
+   PhoneDirectory class in arraylist_demo
+         arraylist or linked list
+
+   ManageStudents class in linkedlist_demo
+    
+   Practice - code methods with list type parameters
+
+3. Implement & Test Singly linked list of int values
+
+   SimpleLinkedList class
+      non-generic, non-object element type
+
+   SimpleLinkedListTest class
+
+
+4. Implement & Test Singly linked list of objects 
+
+   MagazineListSingleLinked class
+      non-generic, object element type
+
+   MagazineListSingleLinkedTest class
+
+
+
