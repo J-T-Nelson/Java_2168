@@ -11,7 +11,7 @@ public class KWArrayList<E> {
     
     public KWArrayList(){
         capacity = INITIAL_CAPACITY;
-        theData = (E[])new Object[capacity];
+        theData = (E[]) new Object[capacity];
     }
    
     //book exercise    

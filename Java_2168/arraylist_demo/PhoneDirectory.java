@@ -6,6 +6,7 @@ public class PhoneDirectory {
     private ArrayList<DirectoryEntry> theDirectory = new ArrayList<>();
     
     public boolean addEntry(String name, String newNumber) {
+        
         for (DirectoryEntry de : theDirectory) {
             if (de.getName().equals(name)) {
                 return false;
