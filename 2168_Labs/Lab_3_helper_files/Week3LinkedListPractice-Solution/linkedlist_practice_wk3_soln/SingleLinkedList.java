@@ -266,7 +266,7 @@ public class SingleLinkedList<E> {
     }
 
     private void addAfter(Node<E> node, E data) {
-        node.next = new Node<>(data, node.next);
+        node.next = new Node<>(data, node.next); // surprised to not see node.next = temp or something like that ... I suppose Java allows this kind of assignment.. (order of resolving the input matters here)
         size++;
     }
 

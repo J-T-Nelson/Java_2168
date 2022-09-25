@@ -27,7 +27,7 @@ public class LinkedListTest {
 
         //populate the linked list of Integer objects:
         //  append an Integer object for 10 to the linked list of Integer objects: myList
-        myList.add(new Integer(10));
+        //myList.add(new Integer(10));
         myList.add(5); //5 is automatically wrapped in an Integer object
         myList.add(20);
         myList.add(10);

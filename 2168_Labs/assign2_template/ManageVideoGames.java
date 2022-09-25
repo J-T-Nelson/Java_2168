@@ -7,10 +7,9 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 public class ManageVideoGames {
-
+    
     public static void main(String[] args) {
         //List<VideoGame> gameCollection = new LinkedList<>(); 
-
         LinkedList<VideoGame> gameCollection = new LinkedList<>();
 
         int userResponse = 0;
@@ -42,8 +41,11 @@ public class ManageVideoGames {
         System.out.println(menu);
     }    
     
+    
     public static int getUserChoice() { // gets user input for making a choice in the displayMenu 
         displayMenu();
+
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         String userSelection = "0";
         while( !(userSelection.equals("1") | userSelection.equals("2") |userSelection.equals("3") |
@@ -67,7 +69,7 @@ public class ManageVideoGames {
     
     //static method to get user input for creating and returning a videoGame object
     public static VideoGame getNewGame() { 
-
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
 
         // following code block prompts the user for fields of VideoGame to be added into a collection
@@ -127,6 +129,7 @@ public class ManageVideoGames {
     
     // Removes VideoGame from gameRepository, user is prompted to enter the game title they wish to remove, valid input is assumed. 
     public static void removeVideoGame(LinkedList<VideoGame> gameRepository){
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the game Title which you wish to remove from the collection please: \n Game titles are: ");
         for(VideoGame game : gameRepository){ //printing the game titles so the user has an easier time making a choice

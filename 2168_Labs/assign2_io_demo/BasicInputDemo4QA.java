@@ -11,6 +11,7 @@ import java.util.Scanner;
  */
 public class BasicInputDemo4QA {
       public static void main(String[] args) {
+        @SuppressWarnings("resource")
           Scanner kb = new Scanner(System.in);
           
           //read an int value

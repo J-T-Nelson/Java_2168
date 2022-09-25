@@ -48,5 +48,9 @@ public class SimpleLinkedList {
         }
         return listInfo;
     }
+    public static void main(String[] args) {
+        SimpleLinkedList sll = new SimpleLinkedList();
+        System.out.println(sll.size);
+    }
 
 }

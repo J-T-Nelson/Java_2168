@@ -8,6 +8,8 @@ package linkedlist_int_node_public;
  * 
  * @author cindy
  */
+
+
 public class SimpleLinkedList {
 
     private Node head;  //the reference to the first Node in this linked list
@@ -18,7 +20,7 @@ public class SimpleLinkedList {
         head = null;
         size = 0;
     }
-
+    
     //append newItem to this linked list
     public boolean add(int newItem) {
         Node temp = new Node(newItem);
@@ -50,5 +52,10 @@ public class SimpleLinkedList {
             current = current.getNext();    //move on to the next Node in this linked list
         }
         return listInfo;
+    }
+
+    public static void main(String[] args) {
+        SimpleLinkedList sll = new SimpleLinkedList();
+        System.out.println(sll.size);
     }
 }

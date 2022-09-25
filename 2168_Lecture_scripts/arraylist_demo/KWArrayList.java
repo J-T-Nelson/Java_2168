@@ -9,6 +9,7 @@ public class KWArrayList<E> {
     private int size;   
     private int capacity; 
     
+    @SuppressWarnings("unchecked")
     public KWArrayList(){
         capacity = INITIAL_CAPACITY;
         theData = (E[]) new Object[capacity];

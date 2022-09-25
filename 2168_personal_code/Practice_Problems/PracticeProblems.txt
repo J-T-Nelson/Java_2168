@@ -1,0 +1,17 @@
+# problems for week 4: 
+    file:///C:/Users/Tanner_N/AppData/Local/Temp/Temp1_Lec8-BeforeClass.zip/Lec8-BeforeClass/Wk4-Lec8-Ch04-P2-Stack-Appl.pdf
+
+    - SLIDES 14-36 have guiding details and test cases for these two problems: 
+    
+1.  Write a program that reads a string and determines whether it is a palindrome
+  -  COMPLETED... working on space and case sensitivity, I think the convention in java is to have overriding work for methods when there are variable amounts of 
+                    paramenters which can be entered into a function. Java will also use alternately named functions for when they return something different
+                    than a function with similar behavior. 
+                    OK overriding is sub-class function overriding parent class behavior.. what I am thinking of is overloading... 
+                    STRATEGY: 
+                     - going to test overloading, just to see if I can do it in static methods. 
+                     - going to 
+
+2.  When analyzing arithmetic expressions, it is important to determine whether an expression is balanced with respect to parentheses
+ - ^^ write a program to test if expressions input are balanced. 
+

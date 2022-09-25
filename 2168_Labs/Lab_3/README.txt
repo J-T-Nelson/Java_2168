@@ -1,0 +1,1 @@
+Nothing of note to share. Everything worked as expected. The assignment was a bit faster than expected. 

@@ -14,7 +14,7 @@ public class ArrayListTest2 {
         System.out.println(intList);   
         
 
-        int[] intArr2 = {10, 20, 30, 40};
+        //int[] intArr2 = {10, 20, 30, 40};
         //self-practice
         //use for each loop to do what is done by the above regular for loop
                 

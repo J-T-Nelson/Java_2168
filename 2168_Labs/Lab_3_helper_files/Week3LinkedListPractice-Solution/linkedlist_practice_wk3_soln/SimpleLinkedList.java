@@ -1,3 +1,5 @@
+
+
 package linkedlist_practice_wk3_soln;
 
 public class SimpleLinkedList { 
