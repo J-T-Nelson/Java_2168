@@ -1,0 +1,21 @@
+
+
+1. tree term exercise
+
+2. huffman tree (encode, decode)
+
+3. binary search tree (search, add)
+
+4. full/complete/perfect binary tree
+
+5. tree application 
+
+6. tree traversal
+
+7. general tree
+
+
+   
+     
+
+     

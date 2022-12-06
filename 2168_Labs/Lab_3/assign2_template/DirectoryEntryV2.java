@@ -1,4 +1,4 @@
-package assign2_template;
+package Lab_3.assign2_template;
 
 /**
  * This class adds a new version of equals(Object o), which compares two directory entries

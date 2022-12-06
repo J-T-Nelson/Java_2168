@@ -1,4 +1,4 @@
-package queue_app;
+package Lab_4_helper_files.queue_app;
 
 /** 
  * Demo: how to use the services provided by class MaintainQueue.

@@ -1,4 +1,4 @@
-package midtermprep_soln;
+package Java_2168.Lecture_test_Materials.MidtermMaterials.CodingPracticeSolutions.midtermprep_soln;
 
 //import java.io.ObjectInputStream.GetField;
 

@@ -1,4 +1,4 @@
-package stack_app;
+package Lab_4_helper_files.stack_app;
 
 /**
  * Test the coding in class PalindromeFinder.

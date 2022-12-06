@@ -1,0 +1,29 @@
+ON RECURSION VS ITERATION IN TERMS OF SPEED: 
+
+    I am trying to understand when recursion is useful, and thus am wondering what its advantages are. 
+    On one hand, it seems widespread in the online community that recursion can sometimes (no always) be easier to read,
+        and can be coded to look more clean and also thus be easier to refactor / update as needed. 
+    On the other hand, it is generally stated that recursion is slower in most common programming languages (python, C, Java) 
+        due to the overhead of allocating new 'stack frames'. 
+
+    The topic of altering the assembly code associated with a program is coming up where whether or not 'tail calls' turn into jumps instead of function calls 
+        keeps coming up. But what the heck are jumps in assembly code? 
+
+        "A jump instruction, like "jmp", just switches the CPU to executing a different piece of code. It's the assembly equivalent of "goto", but unlike goto, jumps are notconsidered shameful in assembly."
+        "Jump Instructions – The jump instruction transfers the program sequence to the memory address given in the operand based on the specified flag"
+
+        ON TAIL CALLS:
+            In computer science, a tail call is a subroutine call performed as the final action of a procedure.[1] If the target of a tail is the same subroutine, the subroutine is said to be tail recursive, which is a special case of direct recursion. Tail recursion (or tail-end recursion) is particularly useful, and is often easy to optimize in implementations.
+            - A 'subroutine' is a synonym for function 
+            So: a tail call is just a function that is called as the last action within a procedure. (last action of a function)
+
+            Tail calls can be implemented without adding a new stack frame to the call stack. Most of the frame of the current procedure is no longer needed, and can be replaced by the frame of the tail call, modified as appropriate. The program can then jump to the called subroutine. Producing such code instead of a standard call sequence is called tail-call elimination or tail-call optimization. Tail-call elimination allows procedure calls in tail position to be implemented as efficiently as goto statements, thus allowing efficient structured programming. In the words of Guy L. Steele, "in general, procedure calls may be usefully thought of as GOTO statements which also pass parameters, and can be uniformly coded as [machine code] JUMP instructions."
+
+    A CALL STACK is composed of STACK FRAMES (also called activation records or activation frames). These are machine dependent and ABI-dependent data structures containing subroutine state information. Each stack frame corresponds to a call to a subroutine which has not yet terminated with a return. For example, if a subroutine named DrawLine is currently running, having been called by a subroutine DrawSquare, the top part of the call stack might be laid out like in the adjacent picture.
+
+
+After reading a bit on the subject, it seems to be the case that when recursion and iteration is appropriate is really context dependent. Where language, 
+    project scope, and purpose are all major drivers behind what technique is preferred. Thus in personal use cases, do what feels best to you. In professional
+    figure out the norm, the reasons for it and stick to it. 
+
+

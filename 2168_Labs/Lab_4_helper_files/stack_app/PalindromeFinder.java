@@ -1,5 +1,5 @@
 /*<listing chapter="4" number="2">*/
-package stack_app;
+package Lab_4_helper_files.stack_app;
 
 import java.util.ArrayDeque;    //a class used as an array-based stack
 import java.util.Deque;         //an interface: double-ended queue used as a stack in this program

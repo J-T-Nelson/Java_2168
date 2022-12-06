@@ -2,7 +2,7 @@
 //* The client class of class ParenChecker or ParenChecker2.
 //* Use new Java feature for stack: ArrayDeque or legacy Stack class.
 
-package stack_app;
+package Lab_4_helper_files.stack_app;
 
 /** The client class of class ParenChecker or ParenChecker2.
  *  @author Cindy

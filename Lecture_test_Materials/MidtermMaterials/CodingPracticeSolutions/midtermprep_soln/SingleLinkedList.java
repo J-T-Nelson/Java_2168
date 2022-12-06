@@ -1,4 +1,4 @@
-package midtermprep_soln;
+package Java_2168.Lecture_test_Materials.MidtermMaterials.CodingPracticeSolutions.midtermprep_soln;
 
 /**
  * Generic Single Linked List. 
@@ -99,7 +99,7 @@ public class SingleLinkedList<E extends Comparable<E>> {
         //Node<String> bill = new Node<String>("Bill");
         //bill.next = tom;
         //Method 2
-        Node<String> bill = new Node<String>("Bill", tom);
+        //Node<String> bill = new Node<String>("Bill", tom);
 
         //add Sue in between Harry and Sam
         Node<String> sue = new Node<String>("Sue", sam);
@@ -188,30 +188,30 @@ public class SingleLinkedList<E extends Comparable<E>> {
      *
      * @returns The removed node's data or null if the list is empty
      */
-    private E removeFirst() {
-        Node<E> temp = head;    //save the reference to the first node in this single linked list
-        if (head != null) {     //this list is not empty.
-            head = head.next;   //make head point to the old 2nd node in this list
-        }
-        //return data at old first node or null if this list is empty
-        if (temp != null) {     //if this list is not empty
-            size--;
-            return temp.data;   //return the data in the old first node
-        } else {
-            return null;
-        }
+    // private E removeFirst() {
+    //     Node<E> temp = head;    //save the reference to the first node in this single linked list
+    //     if (head != null) {     //this list is not empty.
+    //         head = head.next;   //make head point to the old 2nd node in this list
+    //     }
+    //     //return data at old first node or null if this list is empty
+    //     if (temp != null) {     //if this list is not empty
+    //         size--;
+    //         return temp.data;   //return the data in the old first node
+    //     } else {
+    //         return null;
+    //     }
         
-        //Solution 2:
-        /*
-        if (head != null) {             //this list is not empty
-            Node<E> oldFirst = head;    //save a reference to old first node
-            head = head.next;           //make head point to old 2nd node
-            size--;
-            return oldFirst.data;
-        }
-        return null; 
-        */
-    }
+    //     //Solution 2:
+    //     /*
+    //     if (head != null) {             //this list is not empty
+    //         Node<E> oldFirst = head;    //save a reference to old first node
+    //         head = head.next;           //make head point to old 2nd node
+    //         size--;
+    //         return oldFirst.data;
+    //     }
+    //     return null; 
+    //     */
+    // }
 
     /**
      * Remove the item after a given node
@@ -220,16 +220,16 @@ public class SingleLinkedList<E extends Comparable<E>> {
      *             (Assume node is not null when entering the method).
      * @returns The data at the removed node, or null if there is no node to remove.
      */
-    private E removeAfter(Node<E> node) { //Given node: the node referenced by the parameter: node
-        Node<E> temp = node.next;         //save a reference to the given node's successor node.
-        if (temp != null) {               //if given node is not last node on this linked list
-            node.next = temp.next;        //make the given node's data field next point to its successor's successor.
-            size--;
-            return temp.data;
-        } else {
-            return null;
-        }        
-    }
+    // private E removeAfter(Node<E> node) { //Given node: the node referenced by the parameter: node
+    //     Node<E> temp = node.next;         //save a reference to the given node's successor node.
+    //     if (temp != null) {               //if given node is not last node on this linked list
+    //         node.next = temp.next;        //make the given node's data field next point to its successor's successor.
+    //         size--;
+    //         return temp.data;
+    //     } else {
+    //         return null;
+    //     }        
+    // }
 
     /**
      * Get the node at the specified position (i.e. index)

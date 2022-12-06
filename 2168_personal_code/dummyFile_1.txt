@@ -1,0 +1,16 @@
+// woah this is like, the first js I have ever written, and boy, I have no idea what I am writing.. or at least, only sort of get what I am writting 
+// Copy the below path and enter it into a web browser to see your creation!! 
+// file:///D:/Programming/Java_Files&Scripts/Secret_Other_Code/FireShipVideos/scrollAnimations/index.html
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));

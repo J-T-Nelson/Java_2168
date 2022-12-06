@@ -1,7 +1,7 @@
 //SimpleArrayQueueTest.java
 
 
-package queue_app;
+package Lab_4_helper_files.queue_app;
 
 import java.util.Queue;
 import java.util.ArrayDeque;

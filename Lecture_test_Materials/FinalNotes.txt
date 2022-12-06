@@ -1,0 +1,6 @@
+HEAPSORT: 
+- If the index of any element in the array is i, the element in the index 2i+1 will become the left child and element in 2i+2 index will become the right child. Also, the parent of any element at index i is given by the lower bound of (i-1)/2.
+- Heaps come in two forms, max and min heaps... each of which is ordered by level by a principle of the levels below are either less or greater than their parent node. (less = max tree s.t. root is the greatest value)
+
+
+

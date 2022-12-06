@@ -1,4 +1,4 @@
-package assign2_template;
+package Lab_3.assign2_template;
 
 //newer Java API for handling date values
 import java.time.LocalDate;

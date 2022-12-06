@@ -4,7 +4,7 @@
 //File: SimpleLinkedList.java. 
 // Author: Jon Tanner Nelson, Email: tuk58589@temple.edu
 
-package assign3_template;
+package Lab_3.assign3_template;
 
 /**
  * CLASS HEADER: 

@@ -1,0 +1,29 @@
+File input and output can be done in a lot of ways... this is the simplest way which 'Coding with John' likes to use. 
+ FURTHER NOTES ARE IN 'FileIO.java'
+
+NOTES ON BufferReader vs Scanner: 
+    -Scanner is used for parsing tokens from the contents of the stream while BufferedReader just reads the stream and does not do any special parsing.
+        -In fact you can pass a BufferedReader to a scanner as the source of characters to parse.
+    
+    -BufferedReader is synchronized and Scanner is not, so its up to you to decide.
+        (What is synchronized though?)
+
+    -In currently latest JDK 18 release/build (b37), the Scanner has a smaller buffer (1024 chars) as opposed to the BufferedReader (8192 chars), but it's more than sufficient.
+
+        -As to the choice, use the Scanner if you want to parse the file, use the BufferedReader if you want to read the file line by line. Also see the introductory text of their aforelinked API documentations.
+
+        -Parsing = interpreting the given input as tokens (parts). It's able to give back you specific parts directly as int, string, decimal, etc. See also all those nextXxx() methods in Scanner class.
+        -Reading = dumb streaming. It keeps giving back you all characters, which you in turn have to manually inspect if you'd like to match or compose something useful. But if you don't need to do that anyway, then reading is sufficient.
+
+    -BufferedReader has significantly larger buffer memory than Scanner. Use BufferedReader if you want to get long strings from a stream, and use Scanner if you want to parse specific type of token from a stream.
+
+OK I GET THE DIFFERENCE NOW! great. 
+
+Now.. why are we stacking File inside FileReader? and FileReader inside Scanner? 
+
+    `File` seems to be a purer representation of a file where one can check if the file's permissions, you can delete, delete on eqit, compare path names, see the space used by the file, check if the pathname is absolute... etc. The File class really is a wrapper for files in the Java API, if you need typical File interaction, you use the File class
+
+    Alternatively the FileReader object is ONLY a reader. It is not heirarcically realted to the File despite the fact they both can be read from by Scanner or BufferedReader objects as sources of text. Their closest ancestor is Object... i.e, no real relation in terms of inheretence. 
+
+
+I STILL DON"T KNOW WHY Scanner and BufferedReader aren't able to dierectly read from file paths... 
